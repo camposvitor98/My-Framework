@@ -1,0 +1,6 @@
+.primary-button {
+  padding: 0.5rem 1rem;
+  background-color: cyan;
+  border: 1px solid blueviolet;
+  border-radius: 0.5rem;
+}
