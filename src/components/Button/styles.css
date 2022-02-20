@@ -4,3 +4,7 @@
   border: 1px solid blueviolet;
   border-radius: 0.5rem;
 }
+
+.primary-button:hover {
+  opacity: 0.8;
+}

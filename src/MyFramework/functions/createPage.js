@@ -1,12 +1,10 @@
-import { importStyle } from "../index.js";
+import { importStyle, createElement } from "../index.js";
 
 export const createPage = (page, title, stylePath, path) => {
-  const pathFormatted = stylePath.replace("@", "@/pages");
-
-  importStyle(pathFormatted);
+  importStyle(stylePath.replace("@", "@/pages"));
 
   return {
-    body: page,
+    body: createElement(page),
     title,
     path,
   };

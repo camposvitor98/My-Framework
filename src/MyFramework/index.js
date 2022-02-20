@@ -1,4 +1,6 @@
+export { addContent } from "./functions/addContent.js";
 export { createComponent } from "./functions/createComponent.js";
+export { createElement } from "./functions/createElement.js";
 export { createPage } from "./functions/createPage.js";
 export { importStyle } from "./functions/importStyle.js";
 export { renderPage } from "./functions/renderPage.js";

@@ -1,9 +1,7 @@
-import { importStyle } from "../index.js";
+import { importStyle, createElement } from "../index.js";
 
 export const createComponent = (component, stylePath) => {
-  const path = stylePath.replace("@", "@/components");
+  importStyle(stylePath.replace("@", "@/components"));
 
-  importStyle(path);
-
-  return component;
+  return createElement(component);
 };

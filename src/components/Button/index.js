@@ -1,10 +1,13 @@
 import { createComponent } from "../../MyFramework/index.js";
 
 const body = (props) => {
-  const button = document.createElement("button");
-  button.classList = "primary-button";
-  button.innerHTML = props.label;
-  button.addEventListener("click", props.onClick);
+  const button = {
+    elementTag: "button",
+    class: "primary-button",
+
+    content: props.label,
+    onClick: props.onClick,
+  };
   return button;
 };
 
